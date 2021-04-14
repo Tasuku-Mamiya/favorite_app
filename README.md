@@ -35,8 +35,6 @@ Things you may want to cover:
 
 ### Association
 
-- has_many :room_users
-- has_many :rooms, through: room_users
 - has_many :messages
 
 
@@ -47,10 +45,8 @@ Things you may want to cover:
 | ------- | ---------- | ------------------------------ |
 | content | string     |                                |
 | user    | references | null: false, foreign_key: true |
-| room    | references | null: false, foreign_key: true |
 
 ### Association
 
-- belongs_to :room
 - belongs_to :user
 
